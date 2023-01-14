@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-theme.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/toastr.min.css') }}">
+
+
+    <title>Dashboard</title>
+</head>
+
+<style>
+    .widget {
+        margin: 10px 10px 10px 10px;
+    }
+    .widget-icon {
+        margin-top: 30px;
+        margin-left: 45px;
+    }
+    .widget-text {
+        margin-top: 50%;
+    }
+</style>
+
+<body>
+
+    <main role="main" class="container">
+        <h1 class="mt-5">Dashboard</h1>
+        <p class="lead">Updated every sec.</p>
+
+        <div class="row">
+            <div class="col-sm">
+                <p>Light bulb</p>
+                <div class="row widget float-right">
+                    <div class="col-7">
+                        <div class="widget-icon" id="light-widget">
+                            <h1 class="widget-text">...</h1>
+                        </div>
+                    </div>
+                    <div class="col-5" >
+                        <button id="light-on" type="button" class="btn btn-lg btn-secondary mb-4">On</button>
+                        <button id="light-off" type="button" class="btn btn-lg btn-secondary">Off</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <p>Left Window</p>
+                <div class="row widget float-right">
+                    <div class="col-7">
+                        <div class="widget-icon" id="window-left-widget">
+                            <h1 class="widget-text">...</h1>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <button id="window-left-btn-up" type="button" class="btn btn-secondary mb-3">Up</button>
+                        <button id="window-left-btn-stop" type="button" class="btn btn-secondary mb-3">Stop</button>
+                        <button id="window-left-btn-down" type="button" class="btn btn-secondary">Down</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <p>Right Window</p>
+                <div class="row widget float-right">
+                    <div class="col-7">
+                        <div class="widget-icon" id="window-right-widget">
+                            <h1 class="widget-text">...</h1>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <button id="window-right-btn-up" type="button" class="btn btn-secondary mb-3">Up</button>
+                        <button id="window-right-btn-stop" type="button" class="btn btn-secondary mb-3">Stop</button>
+                        <button id="window-right-btn-down" type="button" class="btn btn-secondary">Down</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="{{ url_for('static', filename='js/jquery-3.6.3.min.js') }}"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/adcdd8d815.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/toastr.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/obanach.js') }}"></script>
+
+
+</body>
+</html>
