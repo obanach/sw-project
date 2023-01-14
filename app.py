@@ -1,12 +1,10 @@
 import json
 import tinytuya
-from flask_bootstrap import Bootstrap5
 from flask import Flask, abort, render_template
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-bootstrap = Bootstrap5(app)
 
 lightBulb = tinytuya.OutletDevice('bf6fe6278bc779da94d49v', '192.168.18.8', 'a5e0fef167323362', version=3.4)
 windowRight = tinytuya.CoverDevice('bf1bcf4ed0e156e13bsbvz', '192.168.18.6', 'c6db31d029839f98', version=3.3)
