@@ -9,7 +9,7 @@ Ten projekt ma na celu umożliwienie użytkownikom łatwego i wygodnego zarządz
 - Raspberry Pi
 
 ## Instalacja
-1. Sklonuj repozytorium na swój komputer: `git clone https://github.com/USERNAME/REPO.git`
+1. Sklonuj repozytorium na swój komputer: `git clone https://github.com/obanach/sw-project.git`
 2. Zainstaluj wymagane biblioteki: `pip install -r requirements.txt`
 3. Wprowadź dane dostępowe do swoich urządzen.
 4. Uruchom projekt: `flask run --host=0.0.0.0 --port=5001`
